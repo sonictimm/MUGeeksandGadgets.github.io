@@ -1,0 +1,192 @@
+/*
+*Geeks and Gadgets site style sheet
+*Author: Patrick Shinn
+*Last Update: 1/5/15
+*-----------------------------------------------------------------------------------------------------
+*The first half is for big screens like that of a computer, the second half is for small mobile devices
+*/
+
+/* 
+*Desktop and Laptops
+*-----------------------------------------------------------------------------------------------------
+*/
+
+/*This section will deal with the body of the page.*/
+body{
+    background-color: #04954A;
+    font-family: ubuntu, arial;
+}
+
+/*This section will deal with the header*/
+#head{
+    padding-top: .5em;
+    display: block;
+    background-color: black;
+    margin-top: -2.6em;
+}
+header{
+    margin-top: -.1em;
+    margin-right: -.5em;
+    margin-left: -.5em;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+}
+header h1{
+    text-align: center;
+}
+#logoright{
+    height: 125px;
+    width: 150px;
+    max-height:100%; 
+    max-width:100%;
+    position: absolute; 
+    top: -2%; 
+    right: 10%;
+}
+#logoleft{
+    height: 125px;
+    width: 150px;
+    max-height:100%; 
+    max-width:100%;
+    position: absolute; 
+    top: -2%; 
+    left: 10%;
+}
+/*This section contains all formating dealing with navigation buttons*/
+nav{
+    text-align: center;
+    font-size: 2em;
+    font-family: ubuntu, verdana;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+#main_nav{
+    background-color: white;
+    margin-top: -1em;
+}
+nav li{
+    display: inline;
+}
+.page_nav{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.page_nav:link{
+    text-decoration:none;
+    color: black;
+}
+.page_nav:visited{
+    text-decoration: none;
+    color: black;
+}
+.page_nav:hover{
+    text-decoration: none;
+    color:darkgreen;
+}
+.internal_nav_back{
+    background-color: #47484B
+    padding: -2em;
+}
+.internal_nav{
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.internal_nav:link{
+    text-decoration:none;
+    color: green;
+}
+.internal_nav:visited{
+    text-decoration:none;
+    color: green;
+}
+.internal_nav:hover{
+    color: lightgreen;
+}
+/*Heading formats go here*/
+h1{
+    font-family: "courier new";
+    margin-bottom: -2px;
+    font-size: 4em;
+    color: #009900;
+}
+
+/*This format will be applied to all links in the page that are not for page navigation.*/
+.link:link{
+    text-decoration: none;
+    color: blue;
+}
+.link:visited{
+    text-decoration: none;
+    color: blue;
+}
+.link:hover{
+    text-decoration: none;
+    color: aqua;
+}
+
+/*This section contains all formating for the articles and main elements*/
+main{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 80%;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 1em;
+}
+article{
+    /*aricle formating*/
+}
+.sitemap{
+    padding-bottom: -1em;
+    margin-bottom: -.8em;
+}
+/*This section will deal with the footer and all elements enclosed in the footer*/
+.footer_page_nav{
+    color: white;
+    font-size: 1em;
+    font-family: ubuntu, verdana;
+    text-align: center;
+}
+.footer_page_nav:link{
+    color: white;
+    text-decoration: none;
+}
+.footer_page_nav:visited{
+    color: white;
+    text-decoration: none;
+}
+.footer_page_nav:hover{
+    color: grey;
+    text-decoration: none;
+}
+footer{
+    margin-top: 2.5em;
+    margin-bottom: -.5em;
+    margin-left: -.5em;
+    margin-right: -.5em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: ubuntu, verdana;
+}
+#closing{
+    font-size: 1.5em;
+}
+/*-------------------------------------------------------------------------------------------------------
+*
+* Small Screen formating 
+*---------------------------------------------------------------------------------------------------------
+*/
+@media screen and (max-width: 1000px){
+/* Removes logo on smaller screens */
+ #logoright{
+     display: none;
+    }
+ #logoleft{
+     display: none;
+    }
+}

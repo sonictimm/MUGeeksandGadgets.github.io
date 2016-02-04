@@ -176,6 +176,10 @@ footer{
 #closing{
     font-size: 1.5em;
 }
+/* Special id tags formating*/
+#calendar{
+    margin: auto;
+}
 /*-------------------------------------------------------------------------------------------------------
 *
 * Small Screen formating 

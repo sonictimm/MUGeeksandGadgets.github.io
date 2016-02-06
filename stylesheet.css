@@ -1,7 +1,7 @@
 /*
 *Geeks and Gadgets site style sheet
 *Author: Patrick Shinn
-*Last Update: 1/5/15
+*Last Update: 2/5/16
 *-----------------------------------------------------------------------------------------------------
 *The first half is for big screens like that of a computer, the second half is for small mobile devices
 */
@@ -11,20 +11,15 @@
 *-----------------------------------------------------------------------------------------------------
 */
 
-/*This section will deal with the body of the page.*/
+/*Page Body*/
 body{
-    background-color: #04954A;
+    background-image: url(contents/circuit-board.png);
     font-family: ubuntu, arial;
 }
 
-/*This section will deal with the header*/
+/*Header*/
 #head{
-    padding-top: .5em;
-    display: block;
-    background-color: black;
-    margin-top: -2.6em;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
+    /* only for linking purposes.*/
 }
 header{
     margin-top: -.1em;
@@ -36,25 +31,14 @@ header{
 header h1{
     text-align: center;
 }
-#logoright{
-    height: 125px;
-    width: 150px;
+
+#logo{
+    height: 166.6px;
+    width: 200px;
     max-height:100%; 
     max-width:100%;
-    position: absolute; 
-    top: -2%; 
-    right: 10%;
 }
-#logoleft{
-    height: 125px;
-    width: 150px;
-    max-height:100%; 
-    max-width:100%;
-    position: absolute; 
-    top: -2%; 
-    left: 10%;
-}
-/*This section contains all formating dealing with navigation buttons*/
+/*Header Navigation*/
 nav{
     text-align: center;
     font-size: 2em;
@@ -62,12 +46,22 @@ nav{
     margin-top: -20px;
     margin-bottom: -20px;
 }
+nav ul{list-style-type: none;}
+
+nav li{display: inline;}
+
 #main_nav{
-    background-color: white;
-    margin-top: -1em;
+    background-color: black;
+    margin: auto;
+    width: 100%;
 }
-nav li{
-    display: inline;
+#titleWrapper{width: 27%;}
+
+#main_nav h1{
+    text-align: left;
+    font-family: "courier new";
+    font-size: 2em;
+    color: #34AB00;
 }
 .page_nav{
     padding-left: .5em;
@@ -75,15 +69,15 @@ nav li{
 }
 .page_nav:link{
     text-decoration:none;
-    color: black;
+    color: white;
 }
 .page_nav:visited{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .page_nav:hover{
     text-decoration: none;
-    color:darkgreen;
+    color:forestgreen;
 }
 .internal_nav_back{
     background-color: #47484B
@@ -104,15 +98,10 @@ nav li{
 .internal_nav:hover{
     color: lightgreen;
 }
-/*Heading formats go here*/
-h1{
-    font-family: "courier new";
-    margin-bottom: -2px;
-    font-size: 4em;
-    color: #04954A;
-}
+/*Heading*/
 
-/*This format will be applied to all links in the page that are not for page navigation.*/
+
+/*Links*/
 .link:link{
     text-decoration: none;
     color: blue;
@@ -126,7 +115,7 @@ h1{
     color: aqua;
 }
 
-/*This section contains all formating for the articles and main elements*/
+/*Main*/
 main{
     padding-left: 1em;
     padding-right: 1em;
@@ -144,7 +133,7 @@ article{
     padding-bottom: -1em;
     margin-bottom: -.8em;
 }
-/*This section will deal with the footer and all elements enclosed in the footer*/
+/*Footer*/
 .footer_page_nav{
     color: white;
     font-size: 1em;
@@ -175,9 +164,19 @@ footer{
     text-align: center;
     font-family: ubuntu, verdana;
 }
-#closing{
-    font-size: 1.5em;
+footer img{
+    height: 1.5em;
+    width: 1.5em;
 }
+footer table{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+footer td{
+    width: 1.8em;
+}
+
 /* Special id tags formating*/
 #calendarwrapper{
     margin: auto;
@@ -187,7 +186,7 @@ footer{
 }
 #calendar{
     margin:0 auto;
-    border:solid 0.2em #000;
+    border:solid 0.09em #000;
     height: 100%;
     width: 100%;
     
@@ -198,6 +197,14 @@ footer{
 *---------------------------------------------------------------------------------------------------------
 */
 @media screen and (max-width: 1000px){
+/* Applies to header */
+    
+/* Applies to main */
+    main{
+        font-size: 2em;
+    }
+/* Heading Page Navigation */
+    
 /* Removes logo on smaller screens */
     #logoright{
      display: none;
@@ -205,6 +212,7 @@ footer{
     #logoleft{
      display: none;
     }
+    
     #calendarwrapper{
         height: 30em;
     }

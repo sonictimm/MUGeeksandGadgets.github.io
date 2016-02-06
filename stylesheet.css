@@ -23,6 +23,8 @@ body{
     display: block;
     background-color: black;
     margin-top: -2.6em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 header{
     margin-top: -.1em;
@@ -107,7 +109,7 @@ h1{
     font-family: "courier new";
     margin-bottom: -2px;
     font-size: 4em;
-    color: #009900;
+    color: #04954A;
 }
 
 /*This format will be applied to all links in the page that are not for page navigation.*/
@@ -168,7 +170,7 @@ footer{
     margin-right: -.5em;
     padding-bottom: 2em;
     padding-top: 1em;
-    background-color: black;
+    background-color: #393A3C;
     color: white;
     text-align: center;
     font-family: ubuntu, verdana;
@@ -177,8 +179,18 @@ footer{
     font-size: 1.5em;
 }
 /* Special id tags formating*/
-#calendar{
+#calendarwrapper{
     margin: auto;
+    height: 50em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+#calendar{
+    margin:0 auto;
+    border:solid 0.2em #000;
+    height: 100%;
+    width: 100%;
+    
 }
 /*-------------------------------------------------------------------------------------------------------
 *
@@ -187,10 +199,13 @@ footer{
 */
 @media screen and (max-width: 1000px){
 /* Removes logo on smaller screens */
- #logoright{
+    #logoright{
      display: none;
     }
- #logoleft{
+    #logoleft{
      display: none;
+    }
+    #calendarwrapper{
+        height: 30em;
     }
 }

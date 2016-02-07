@@ -24,12 +24,8 @@ body{
 	position:relative;
 }
 
-<<<<<<< HEAD
 /*Header
 -------------------------------------------------------------------*/
-=======
-/*Header*/
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
 #head{
     /* only for linking purposes.*/
 }
@@ -47,12 +43,9 @@ header table{
     margin-top: -20px;
     margin-bottom: -20px;
 }
-<<<<<<< HEAD
 header h1{
     text-align: center;
 }
-=======
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
 
 #logo{
     height: 166.6px;
@@ -60,18 +53,8 @@ header h1{
     max-height:100%; 
     max-width:100%;
 }
-<<<<<<< HEAD
 /*Header Navigation
 ---------------------------------------------------------------------*/
-=======
-/*Header Navigation*/
-nav{
-    text-align: center;
-    font-size: 2em;
-    font-family: ubuntu, verdana;
-    margin-top: -20px;
-    margin-bottom: -20px;
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
 }
 nav ul{list-style-type: none;}
 
@@ -127,16 +110,9 @@ nav li{display: inline;}
 .internal_nav:hover{
     color: lightgreen;
 }
-<<<<<<< HEAD
 
 /*Links
 ------------------------------------------------------------------*/
-=======
-/*Heading*/
-
-
-/*Links*/
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
 .link:link{
     text-decoration: none;
     color: blue;
@@ -150,12 +126,8 @@ nav li{display: inline;}
     color: aqua;
 }
 
-<<<<<<< HEAD
 /*Main
 ------------------------------------------------------------------*/
-=======
-/*Main*/
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
 main{
     padding-left: 1em;
     padding-right: 1em;
@@ -177,15 +149,10 @@ article{
     padding-bottom: -1em;
     margin-bottom: -.8em;
 }
-<<<<<<< HEAD
 /*Footer
 -------------------------------------------------------------------*/
 footer{
     background-color: #393A3C;
-=======
-/*Footer*/
-.footer_page_nav{
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
     color: white;
     text-align: center;
     font-family: ubuntu, verdana;
@@ -209,7 +176,6 @@ footer img{
     width: 2.5em;
     height: 2.5em;
 }
-<<<<<<< HEAD
 
 /* Special id tags formating
 ---------------------------------------------------------------------*/
@@ -219,40 +185,6 @@ footer img{
     width: 80%;
     margin-bottom: 2em;
 }
-=======
-footer{
-    margin-top: 2.5em;
-    margin-bottom: -.5em;
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    background-color: #393A3C;
-    color: white;
-    text-align: center;
-    font-family: ubuntu, verdana;
-}
-footer img{
-    height: 1.5em;
-    width: 1.5em;
-}
-footer table{
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-footer td{
-    width: 1.8em;
-}
-
-/* Special id tags formating*/
-#calendarwrapper{
-    margin: auto;
-    height: 50em;
-    width: 80%;
-    margin-bottom: 2em;
-}
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
 #calendar{
     margin:0 auto;
     border:solid 0.09em #000;
@@ -273,12 +205,9 @@ footer td{
         font-size: 2em;
     }
 /* Heading Page Navigation */
-<<<<<<< HEAD
     header table nav{
         
     }
-=======
->>>>>>> 36c22d4bbef3cf713f9e70d16663634264723aba
     
 /* Removes logo on smaller screens */
     #logoright{

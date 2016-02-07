@@ -1,7 +1,7 @@
 /*
 *Geeks and Gadgets site style sheet
 *Author: Patrick Shinn
-*Last Update: 1/5/15
+*Last Update: 2/6/16
 *-----------------------------------------------------------------------------------------------------
 *The first half is for big screens like that of a computer, the second half is for small mobile devices
 */
@@ -11,18 +11,23 @@
 *-----------------------------------------------------------------------------------------------------
 */
 
-/*This section will deal with the body of the page.*/
+/*Page Body*/
 body{
-    background-color: #04954A;
+    background-image: url(contents/circuit-board.png);
     font-family: ubuntu, arial;
+    margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper{
+    min-height:100%;
+	position:relative;
 }
 
-/*This section will deal with the header*/
+/*Header
+-------------------------------------------------------------------*/
 #head{
-    padding-top: .5em;
-    display: block;
-    background-color: black;
-    margin-top: -2.6em;
+    /* only for linking purposes.*/
 }
 header{
     margin-top: -.1em;
@@ -31,41 +36,42 @@ header{
     margin-bottom: 1.5em;
     padding-bottom: 1em;
 }
-header h1{
-    text-align: center;
-}
-#logoright{
-    height: 125px;
-    width: 150px;
-    max-height:100%; 
-    max-width:100%;
-    position: absolute; 
-    top: -2%; 
-    right: 10%;
-}
-#logoleft{
-    height: 125px;
-    width: 150px;
-    max-height:100%; 
-    max-width:100%;
-    position: absolute; 
-    top: -2%; 
-    left: 10%;
-}
-/*This section contains all formating dealing with navigation buttons*/
-nav{
+header table{
     text-align: center;
     font-size: 2em;
     font-family: ubuntu, verdana;
     margin-top: -20px;
     margin-bottom: -20px;
 }
-#main_nav{
-    background-color: white;
-    margin-top: -1em;
+header h1{
+    text-align: center;
 }
-nav li{
-    display: inline;
+
+#logo{
+    height: 166.6px;
+    width: 200px;
+    max-height:100%; 
+    max-width:100%;
+}
+/*Header Navigation
+---------------------------------------------------------------------*/
+}
+nav ul{list-style-type: none;}
+
+nav li{display: inline;}
+
+#main_nav{
+    background-color: black;
+    margin: auto;
+    width: 100%;
+}
+#titleWrapper{width: 27%;}
+
+#main_nav h1{
+    text-align: left;
+    font-family: "courier new";
+    font-size: 2em;
+    color: #34AB00;
 }
 .page_nav{
     padding-left: .5em;
@@ -73,19 +79,21 @@ nav li{
 }
 .page_nav:link{
     text-decoration:none;
-    color: black;
+    color: white;
 }
 .page_nav:visited{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .page_nav:hover{
     text-decoration: none;
-    color:darkgreen;
+    color:forestgreen;
 }
 .internal_nav_back{
     background-color: #47484B
     padding: -2em;
+    text-align: center;
+    font-size: 2em;
 }
 .internal_nav{
     margin-left: .5em;
@@ -102,15 +110,9 @@ nav li{
 .internal_nav:hover{
     color: lightgreen;
 }
-/*Heading formats go here*/
-h1{
-    font-family: "courier new";
-    margin-bottom: -2px;
-    font-size: 4em;
-    color: #009900;
-}
 
-/*This format will be applied to all links in the page that are not for page navigation.*/
+/*Links
+------------------------------------------------------------------*/
 .link:link{
     text-decoration: none;
     color: blue;
@@ -124,16 +126,21 @@ h1{
     color: aqua;
 }
 
-/*This section contains all formating for the articles and main elements*/
+/*Main
+------------------------------------------------------------------*/
 main{
     padding-left: 1em;
     padding-right: 1em;
     padding-top: .5em;
-    padding-bottom: .5em;
+    padding-bottom: 5em;
+    margin-bottom: 5em;
     width: 80%;
     margin: auto;
     background-color: whitesmoke;
     border-radius: 1em;
+}
+#spacer{
+    padding-bottom: 10em;
 }
 article{
     /*aricle formating*/
@@ -142,39 +149,48 @@ article{
     padding-bottom: -1em;
     margin-bottom: -.8em;
 }
-/*This section will deal with the footer and all elements enclosed in the footer*/
-.footer_page_nav{
-    color: white;
-    font-size: 1em;
-    font-family: ubuntu, verdana;
-    text-align: center;
-}
-.footer_page_nav:link{
-    color: white;
-    text-decoration: none;
-}
-.footer_page_nav:visited{
-    color: white;
-    text-decoration: none;
-}
-.footer_page_nav:hover{
-    color: grey;
-    text-decoration: none;
-}
+/*Footer
+-------------------------------------------------------------------*/
 footer{
-    margin-top: 2.5em;
-    margin-bottom: -.5em;
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    background-color: black;
+    background-color: #393A3C;
     color: white;
     text-align: center;
     font-family: ubuntu, verdana;
+    width:100%;
+    height: 8.5em;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
-#closing{
-    font-size: 1.5em;
+
+
+footer table{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+footer td{
+    width: 1.8em;
+}
+footer img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/* Special id tags formating
+---------------------------------------------------------------------*/
+#calendarwrapper{
+    margin: auto;
+    height: 50em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+#calendar{
+    margin:0 auto;
+    border:solid 0.09em #000;
+    height: 100%;
+    width: 100%;
+    
 }
 /*-------------------------------------------------------------------------------------------------------
 *
@@ -182,11 +198,26 @@ footer{
 *---------------------------------------------------------------------------------------------------------
 */
 @media screen and (max-width: 1000px){
+/* Applies to header */
+    
+/* Applies to main */
+    main{
+        font-size: 2em;
+    }
+/* Heading Page Navigation */
+    header table nav{
+        
+    }
+    
 /* Removes logo on smaller screens */
- #logoright{
+    #logoright{
      display: none;
     }
- #logoleft{
+    #logoleft{
      display: none;
+    }
+    
+    #calendarwrapper{
+        height: 30em;
     }
 }

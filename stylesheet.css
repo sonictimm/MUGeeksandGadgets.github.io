@@ -12,6 +12,7 @@
 */
 
 /*Page Body*/
+<<<<<<< HEAD
 html,
 body {
 	background-image: url(contents/circuit-board.png);
@@ -22,6 +23,17 @@ body {
 }
 #wrapper {
 	min-height:100%;
+=======
+body{
+    background-image: url(contents/circuit-board.png);
+    font-family: ubuntu, arial;
+    margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper{
+    min-height:100%;
+>>>>>>> 9de3e0e4a215e474ca54749f10f89a3c51e5b349
 	position:relative;
 }
 
@@ -54,11 +66,17 @@ header h1{
     max-height:100%; 
     max-width:100%;
 }
+<<<<<<< HEAD
 
 /*Header Navigation
 ---------------------------------------------------------------------*/
 #head{/*only for linking purposes.*/}
 
+=======
+/*Header Navigation
+---------------------------------------------------------------------*/
+}
+>>>>>>> 9de3e0e4a215e474ca54749f10f89a3c51e5b349
 nav ul{list-style-type: none;}
 
 nav li{display: inline;}
@@ -131,6 +149,7 @@ nav li{display: inline;}
 
 /*Main
 ------------------------------------------------------------------*/
+<<<<<<< HEAD
 main {
 	padding-left: 1em;
    	padding-right: 1em;
@@ -141,6 +160,21 @@ main {
 	margin: auto;
 	width: 80%;
 	border-radius: 1em;
+=======
+main{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: 5em;
+    margin-bottom: 5em;
+    width: 80%;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 1em;
+>>>>>>> 9de3e0e4a215e474ca54749f10f89a3c51e5b349
+}
+#spacer{
+    padding-bottom: 10em;
 }
 article{
     /*aricle formating*/
@@ -149,6 +183,7 @@ article{
     padding-bottom: -1em;
     margin-bottom: -.8em;
 }
+<<<<<<< HEAD
 #spacer {
 	padding-bottom:11em;
 
@@ -167,6 +202,23 @@ footer {
 	left:0;
 	margin-bottom: -.5em;
 }
+=======
+/*Footer
+-------------------------------------------------------------------*/
+footer{
+    background-color: #393A3C;
+    color: white;
+    text-align: center;
+    font-family: ubuntu, verdana;
+    width:100%;
+    height: 8.5em;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+
+>>>>>>> 9de3e0e4a215e474ca54749f10f89a3c51e5b349
 footer table{
     margin: auto;
     margin-top: 1em;

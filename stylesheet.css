@@ -1,17 +1,24 @@
 /*
 *Geeks and Gadgets site style sheet
 *Author: Patrick Shinn
-*Last Update: 2/6/16
+*Last Update: 2/9/16
 *-----------------------------------------------------------------------------------------------------
-*The first half is for big screens like that of a computer, the second half is for small mobile devices
+*  The first half is for big screens like that of a computer, the second half is for small mobile devices
+
+Special thanks to:
+    CSSReset.com for absolute footer help. 
+    http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+
+
+
+    Bradon Duke for a variety of resources that helped make this page possible.
 */
 
-/* 
-*Desktop and Laptops
-*-----------------------------------------------------------------------------------------------------
-*/
+/* Desktop and Laptops
+-----------------------------------------------------------------------------------------------------*/
 
-/*Page Body*/
+/*Page Body
+-----------------------------------------------------------------*/
 html,
 body {
 	background-image: url(contents/circuit-board.png);
@@ -63,6 +70,7 @@ nav ul{list-style-type: none;}
 
 nav li{display: inline;}
 
+/*Main page navigation header*/
 #main_nav{
     background-color: black;
     margin: auto;
@@ -76,6 +84,7 @@ nav li{display: inline;}
     font-size: 2em;
     color: #34AB00;
 }
+/*Main page nav formating*/
 .page_nav{
     padding-left: .5em;
     padding-right: .5em;
@@ -92,6 +101,8 @@ nav li{display: inline;}
     text-decoration: none;
     color:forestgreen;
 }
+
+/*Formating for all internal page navigation*/
 .internal_nav_back{
     background-color: #47484B
     padding: -2em;
@@ -146,10 +157,12 @@ article{
     /*aricle formating*/
 }
 .sitemap{
+    /*Used in programming page for sub headers*/
     padding-bottom: -1em;
     margin-bottom: -.8em;
 }
 #spacer {
+    /*For the absolute footer*/
 	padding-bottom:11em;
 
 /*Footer
@@ -214,20 +227,16 @@ footer img{
         
     }
     
-/* Removes logo on smaller screens */
-    #logoright{
-     display: none;
-    }
-    #logoleft{
-     display: none;
-    }
-    
     #calendarwrapper{
         height: 30em;
     }
+    /*Footer pull down for firefox.*/
+    footer{
+        margin-bottom: -1em;
+    }
 /* Makes social media links bigger */
     footer img{
-        width: 3.2em;
-        height: 3.2em;
+        width: 4em;
+        height: 4em;
     }
 }

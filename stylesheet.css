@@ -232,7 +232,7 @@ footer img{
     }
     /*Footer pull down for firefox.*/
     footer{
-        margin-bottom: -1em;
+        margin-bottom: 0em;
     }
 /* Makes social media links bigger */
     footer img{

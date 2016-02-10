@@ -12,12 +12,21 @@
 */
 
 /*Page Body*/
-body{
-    background-image: url(contents/circuit-board.png);
-    font-family: ubuntu, arial;
+html,
+body {
+	background-image: url(contents/circuit-board.png);
+   	font-family: ubuntu, arial;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
 }
 
-/*Header*/
+/*Header
+-------------------------------------------------------------------*/
 #head{
     /* only for linking purposes.*/
 }
@@ -28,24 +37,28 @@ header{
     margin-bottom: 1.5em;
     padding-bottom: 1em;
 }
-header h1{
-    text-align: center;
-}
-
-#logo{
-    height: 166.6px;
-    width: 200px;
-    max-height:100%; 
-    max-width:100%;
-}
-/*Header Navigation*/
-nav{
+header table{
     text-align: center;
     font-size: 2em;
     font-family: ubuntu, verdana;
     margin-top: -20px;
     margin-bottom: -20px;
 }
+header h1{
+    text-align: center;
+}
+
+#logo{
+    height: 100%;
+    width: 200px;
+    max-height:100%; 
+    max-width:100%;
+}
+
+/*Header Navigation
+---------------------------------------------------------------------*/
+#head{/*only for linking purposes.*/}
+
 nav ul{list-style-type: none;}
 
 nav li{display: inline;}
@@ -82,6 +95,8 @@ nav li{display: inline;}
 .internal_nav_back{
     background-color: #47484B
     padding: -2em;
+    text-align: center;
+    font-size: 2em;
 }
 .internal_nav{
     margin-left: .5em;
@@ -98,10 +113,9 @@ nav li{display: inline;}
 .internal_nav:hover{
     color: lightgreen;
 }
-/*Heading*/
 
-
-/*Links*/
+/*Links
+------------------------------------------------------------------*/
 .link:link{
     text-decoration: none;
     color: blue;
@@ -115,16 +129,18 @@ nav li{display: inline;}
     color: aqua;
 }
 
-/*Main*/
-main{
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    width: 80%;
-    margin: auto;
-    background-color: whitesmoke;
-    border-radius: 1em;
+/*Main
+------------------------------------------------------------------*/
+main {
+	padding-left: 1em;
+   	padding-right: 1em;
+	padding-bottom: 5em;
+	background-color: whitesmoke;
+	padding:10px;
+	margin-bottom: 5em;
+	margin: auto;
+	width: 80%;
+	border-radius: 1em;
 }
 article{
     /*aricle formating*/
@@ -133,40 +149,23 @@ article{
     padding-bottom: -1em;
     margin-bottom: -.8em;
 }
-/*Footer*/
-.footer_page_nav{
-    color: white;
-    font-size: 1em;
-    font-family: ubuntu, verdana;
-    text-align: center;
+#spacer {
+	padding-bottom:11em;
+
+/*Footer
+-------------------------------------------------------------------*/
 }
-.footer_page_nav:link{
-    color: white;
-    text-decoration: none;
-}
-.footer_page_nav:visited{
-    color: white;
-    text-decoration: none;
-}
-.footer_page_nav:hover{
-    color: grey;
-    text-decoration: none;
-}
-footer{
-    margin-top: 2.5em;
-    margin-bottom: -.5em;
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    background-color: #393A3C;
-    color: white;
-    text-align: center;
-    font-family: ubuntu, verdana;
-}
-footer img{
-    height: 1.5em;
-    width: 1.5em;
+footer {
+	background-color:#393A3C;
+	color: white;
+	text-align: center;
+	font-family: ubuntu, verdana;
+	width:100%;
+	height:7.8em;
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin-bottom: -.5em;
 }
 footer table{
     margin: auto;
@@ -174,10 +173,17 @@ footer table{
     margin-bottom: 1em;
 }
 footer td{
+    padding-left: .5em;
+    padding-right: .5em;
     width: 1.8em;
 }
+footer img{
+    width: 2.5em;
+    height: 2.5em;
+}
 
-/* Special id tags formating*/
+/* Special id tags formating
+---------------------------------------------------------------------*/
 #calendarwrapper{
     margin: auto;
     height: 50em;
@@ -204,6 +210,9 @@ footer td{
         font-size: 2em;
     }
 /* Heading Page Navigation */
+    header table nav{
+        
+    }
     
 /* Removes logo on smaller screens */
     #logoright{
@@ -215,5 +224,10 @@ footer td{
     
     #calendarwrapper{
         height: 30em;
+    }
+/* Makes social media links bigger */
+    footer img{
+        width: 3.2em;
+        height: 3.2em;
     }
 }

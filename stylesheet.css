@@ -70,13 +70,14 @@ nav ul{list-style-type: none;}
 
 nav li{display: inline;}
 
+
 /*Main page navigation header*/
 #main_nav{
     background-color: black;
     margin: auto;
     width: 100%;
 }
-#titleWrapper{width: 27%;}
+#titleWrapper{width: 26%;}
 
 #main_nav h1{
     text-align: left;
@@ -86,8 +87,8 @@ nav li{display: inline;}
 }
 /*Main page nav formating*/
 .page_nav{
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: .1em;
+    padding-right: .1em;
 }
 .page_nav:link{
     text-decoration:none;
@@ -155,6 +156,22 @@ main {
 }
 article{
     /*aricle formating*/
+}
+table{
+    text-align: center;
+}
+td{
+    margin: .5em;
+}
+#livefeed td{
+    height: 13em;
+    width: 25em;
+    border: solid .2em black;
+}
+.album-cover{
+    height: 180px;
+    width: 210px;
+    border: solid black;
 }
 .sitemap{
     /*Used in programming page for sub headers*/

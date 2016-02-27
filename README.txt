@@ -9,7 +9,8 @@ Site Organization
 ------------------------------------------------------------------------------
 The site is organized in a way that each page gets it's own folder for contents.
 Doing this will keep the site organized and fast. Only pages with additional content
-should get a folder such as images, text documents, applications, etc. This is not true for
+should get a folder. This contennt includes but is not limited to:
+images, text documents, applications, etc. This is not true for
 the home page however, the home page will always remain in the root directory of the site as
 well as its contents. If a page has no additonal content, it may remain in the same directory
 as the page that it is linked to.
@@ -28,13 +29,14 @@ Page Formating
 -------------------------------------------------------------------------------
 All page Formating will be done with a single CSS file. This file will reside in the root
 directory of the site. All pages will be styled the same with the exception of key element
-that seperate that page from the rest of the site. All additional contents needed for page styling
+that seperate that page from the rest of the site. All additional contents needed for universal page styling
 should be placed in the contents folder of the root directory.
 
 stylesheet.css will be the formating file. The file is commented for organization purposes and for
 ease of use. Please be sure to follow along with the sections.
 
-If your page needs a special class that the rest of the site will not use, place it in the html document.
+If your page needs a special class that the rest of the site will not use, place it in the html document itself
+unless it lenghty and would clutter the code. In this case, it should be placed in the style sheet under special IDs.
 Internal style sheets should be used if it style only affects one page.
 
 

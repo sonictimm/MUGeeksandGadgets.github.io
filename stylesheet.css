@@ -1,7 +1,7 @@
 /*
 *Geeks and Gadgets site style sheet
 *Author: Patrick Shinn
-*Last Update: 2/9/16
+*Last Update: 2/29/16
 *-----------------------------------------------------------------------------------------------------
 *  The first half is for big screens like that of a computer, the second half is for small mobile devices
 
@@ -22,6 +22,7 @@ Special thanks to:
 html,
 body {
 	background-image: url(contents/circuit-board.png);
+    overflow-x: hidden;
    	font-family: ubuntu, arial;
 	margin:0;
 	padding:0;
@@ -40,6 +41,8 @@ body {
 header{
     margin-top: -.1em;
     margin-right: -.5em;
+    padding-right: .5em;
+    padding-left: .5em;
     margin-left: -.5em;
     margin-bottom: 1.5em;
     padding-bottom: 1em;
@@ -56,7 +59,7 @@ header h1{
 }
 
 #logo{
-    height: 100%;
+    height: auto;
     width: 200px;
     max-height:100%; 
     max-width:100%;
@@ -241,12 +244,11 @@ footer img{
 /* Applies to main */
     main{
         font-size: 2em;
+        width: 95%;
     }
 /* Heading Page Navigation */
-    header table nav{
-        
+    header table nav{    
     }
-    
     #calendarwrapper{
         height: 30em;
     }

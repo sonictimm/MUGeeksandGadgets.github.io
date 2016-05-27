@@ -77,7 +77,10 @@ nav li{display: inline;}
     margin: auto;
     width: 100%;
 }
-#titleWrapper{width: 26%;}
+#titleWrapper{
+    width: 26%;
+    font-family: "andale mono";
+}
 
 #main_nav h1{
     text-align: left;

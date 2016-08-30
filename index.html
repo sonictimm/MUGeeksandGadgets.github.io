@@ -1,126 +1,144 @@
-<!doctype html>
-<html lang='en'>
-    <head>
-        <script src="http://use.edgefonts.net/ubuntu:n4,i4,n7,i7,n3,i3,n5,i5:all.js"></script>
-        <meta charset="utf-8">
-        <link type="text/css" rel="stylesheet" href="stylesheet.css" />
-        <link rel="icon" type="image/png" sizes="any" href="contents/Logo.png">
-        <title>Geeks and Gadgets</title>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header id="head">
-                <table id="main_nav">
-                    <tbody>
-                        <tr> 
-                            <td><img src="contents/Logo.png" alt="logo" id="logo"/></td>
-                            <td id="titleWrapper"><h1>#Home_</h1></td>
-                            <nav>
-                                <td><a class="page_nav" href="index.html">Home</a></td>
-                                <td><a class="page_nav" href="news/index.html">News</a></td>
-                                <td><a class="page_nav" href="about/index.html">About</a></td>
-                                <td><a class="page_nav" href="Resources/index.html">Resources</a></td>
-                                <td><a class="page_nav" href="projects/index.html">Projects</a></td>
-                                <td><a class="page_nav" href="contact.html">Contact</a></td>
-                            </nav>
-                        </tr>
-                    </tbody>
-                </table>
-        </header>
-        <main>
-            <h2 style="text-align: center;">Mission Statement</h2>
-            <blockquote style="font-style: italic; text-align: center;">
-                Our club seeks to study and improve technology,
-                <br>
-                to nurture people's understanding of it,
-                <br>
-                and to apply it in fun and benevolent ways that benefits not only us,
-                <br>
-                but socieity as a whole.
-            </blockquote>
-            <hr>
-            <article>
-                <h2>Who We Are</h2>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | MU G&G</title>
+    <meta name="theme-color" content="#808080">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="contents/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="contents/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="contents/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="contents/apple-icon-144x144.png" />
+    <link rel='stylesheet' media='screen and (max-width: 1000px)' href='css/mobile.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1001px)' href='css/wideScreen.css' />
+</head>
+
+<body id="top">
+    <nav id="navContainer">
+        <a href="/"><img src="contents/Logo.png" /></a>
+        <div id="nav">
+            <ul>
+                <li id="navHome">
+                    <p>-</p>
+                </li>
+                <!--Spacer for mobile nav-->
+                <li id="navHome">
+                    <p><a class="currentPage" href="/">HOME</a></p>
+                </li>
+                <li>
+                    <p><a href="news/">NEWS</a></p>
+                </li>
+                <li>
+                    <p><a href="about/">ABOUT</a></p>
+                </li>
+                <li>
+                    <p><a href="resources/">RESOURCES</a></p>
+                </li>
+                <li>
+                    <p><a href="projects/">PROJECTS</a></p>
+                </li>
+                <li>
+                    <p><a href="contact/">CONTACT</a></p>
+                </li>
+                <li>
+                    <p><a href="calendar/">CALENDAR</a></p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+
+    <div class="clear-menu-btn">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+        <span class="circle"></span>
+    </div>
+
+    <div id="blueBlock"></div>
+
+    <div id="wrapper">
+        <div id="moverBlock"></div>
+        <div id="content">
+            <div class="seperator"></div>
+            <main id="mainHome">
+                <h1 id="pgTitle">#Home_</h1>
+                <h2>Mission Statement</h2>
+                <blockquote>
+                    Our club seeks to study and improve technology,
+                    <br> to nurture people's understanding of it,
+                    <br> and to apply it in fun and benevolent ways that benefits not only us,
+                    <br> but socieity as a whole.
+                </blockquote>
+                <hr>
+                <article>
+                    <h2>Who We Are</h2>
                     <p>
                         We are the Geeks and Gadgets Club of
-                        <a class='link' target="_blank" href="https://www.marshall.edu">Marshall University</a>.
-                        Our club is <strong>free for all students to join</strong>, and
-                        we wish to cultivate diversity of <em>thought</em> and
-                        <em>vocation</em> among our members. 
-                     </p>
-                     <p>
+                        <a class='link' target="_blank" href="https://www.marshall.edu">Marshall University</a>. Our club is <strong>free for all students to join</strong>, and we wish to cultivate diversity of <em>thought</em> and
+                        <em>vocation</em> among our members.
+                    </p>
+                    <p>
                         Geeks and Gadgets is a strong advocate of free and open source software for all, online privacy, and helping people learn how technology works and how to better use it to aid in everyday life. Our goal is to develop an environment in which those who have an interest in technology can through experimenting, developing, and using technology, learn skills and develop relations with people that will help futher a career in a technology related field as well as other respective disciplines.
-                     </p>
-                     <hr/>
-                <h2>Calendar</h2>
-                    <div id="calendarwrapper">
-                        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showNav=0&amp;showTabs=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%2399ff99&amp;src=424gof7isp01t2i8qs1gh2pl5g%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FNew_York"></iframe>
-                    </div>
-                    <hr/>
-                <h2>Current Activities</h2>
-                    <p>
-                        To keep up to date with our most recent activities, please visit our <a target="_blank" href="https://www.facebook.com/geeksandgadgetsclub" class="link">Facebook page</a>. There you can find recent group photos, updates on our latest projects, and more! 
                     </p>
-                    <hr/>
-                <h2>How to Use this Site</h2>
+                    <h2>Current Activities</h2>
                     <p>
-                        The site is broken up into four sections:
-                        <ul>
-                            <li>Home</li>
-                            <li>News</li>
-                            <li>About</li>
-                            <li>Resources</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
-                        </ul>
-                        Each section has something different to offer.
+                        To keep up to date with our most recent activities, please visit our <a target="_blank" href="https://www.facebook.com/geeksandgadgetsclub" class="link">Facebook page</a>. There you can find recent group photos, updates on our latest projects, and more!
                     </p>
-                    <h3 class="sitemap">Home</h3>
-                        <p>
-                            This is the home page. It is generally a summary of the news and about us page.
-                        </p>
-              	    <h3 class="sitemap">News</h3>
-              		<p>
-              		  Links to our various social media outlet.
-              		</p>
-                    <h3 class="sitemap">About</h3>
-                        <p>
-                            This is where you will find info about the Geeks. Officers, project leaders, and a general description of what the club is about will be found here.
-                        </p>
-                    <h3 class="sitemap">Resources</h3>
-                        <p>
-                            A range of resources can be found here. For more info, visit the resources page.
-                        </p>
-                    <h3 class="sitemap">Projects</h3>
-                        <p>
-                            This is where information on individual projects both past and present can be found as well as any documentation associated with them.
-                        </p>
-              	   <h3 class="sitemap">Contact</h3>
-              		<p>
-              		  Contact information for the club.
-              		</p>
-                    <hr/>
-                <h2>Feed Back</h2>
+                    <hr>
+                    <h2>How to Use this Site</h2>
+                    <p>The site is broken up into four sections, and each section has something different to offer.</p>
+                    <h3>Home</h3>
+                    <p>
+                        This is the home page. It is generally a summary of the news and about us page.
+                    </p>
+                    <h3>News</h3>
+                    <p>
+                        Links to our various social media outlet.
+                    </p>
+                    <h3>About</h3>
+                    <p>
+                        This is where you will find info about the Geeks. Officers, project leaders, and a general description of what the club is about will be found here.
+                    </p>
+                    <h3>Resources</h3>
+                    <p>
+                        A range of resources can be found here. For more info, visit the resources page.
+                    </p>
+                    <h3>Projects</h3>
+                    <p>
+                        This is where information on individual projects both past and present can be found as well as any documentation associated with them.
+                    </p>
+                    <h3>Contact</h3>
+                    <p>
+                        Contact information for the club.
+                    </p>
+                    <hr>
+                    <h2>Feed Back</h2>
                     <p>
                         Like the site? Hate the site? Here is your chance to give your input on what you like and don't like about the Geeks and Gadgets website. To contact us with feed back, please visit our contact page and let us know what you think!
                     </p>
-            </article>
-        </main>
-        <div id="spacer"></div>
-        <footer>
-            <nav>
-                <table>
-                    <tbody>
-                        <td><a traget="_blank" href="contents/Application.pdf"><img src="contents/Join.png"</a></td>
-                        <td><a target="_blank" href="https://www.facebook.com/geeksandgadgetsclub"><img src="contents/Facebook.png"/></a></td>
-                        <td><a target="_blank" href="https://twitter.com/MUGandG"><img src="contents/Twitter.png"</a></td>
-                        <td><a target="_blank" href="https://www.youtube.com/channel/UCKewnEQIee3QeGMmJXzo3uA"><img src="contents/YouTube.png"</a></td>
-                        <td><a target="_blank" href="https://github.com/MUGeeksandGadgets"><img src="contents/GitHub.png"</a></td>
-                    </tbody>
-                </table>
-            </nav>
-            <p>Marshall Geeks and Gadgets 2016</p>
-        </footer>
+                </article>
+            </main>
         </div>
-    </body>
+        <footer id="footer">
+            <div id="footer_accent">
+            </div>
+            <div id="footerContent">
+                <div id="connect">
+                    <h2>CONNECT WITH MU G&G</h2>
+                </div>
+                <div id="connectSocial">
+                    <a target="_blank" href="contents/Application.pdf"><img src="contents/Join.png" /></a>
+                    <a target="_blank" href="https://www.facebook.com/geeksandgadgetsclub"><img src="contents/Facebook.png" /></a>
+                    <a target="_blank" href="https://twitter.com/MUGandG"><img src="contents/Twitter.png" /></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCKewnEQIee3QeGMmJXzo3uA"><img src="contents/YouTube.png" /></a>
+                    <a target="_blank" href="https://github.com/MUGeeksandGadgets"><img src="contents/GitHub.png" /></a>
+                </div>
+            </div>
+            <p id="bduke"><a target="_blank" href="https://bmduke1997.github.io/">A b.duke Site</a></p>
+        </footer>
+    </div>
+</body>
+
 </html>

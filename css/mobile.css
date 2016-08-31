@@ -37,7 +37,7 @@ body {
 }
 
 #content a:hover {
-    color: #FF6A00;
+    color: #004c4c;
 }
 
 
@@ -248,9 +248,9 @@ body {
 .clear-menu-btn span {
     position: absolute;
     display: block;
-    width: 3em;
-    height: .12em;
-    background-color: #808080;
+    width: 1.5em;
+    height: .2em;
+    background-color: #666a6a;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -260,34 +260,40 @@ body {
 }
 
 .clear-menu-btn .top {
-    top: 15%;
+    top: 35%;
+    margin-left: .75em;
+    background-color: #1F7676;
+    z-index: 1;
 }
 
 .clear-menu-btn .middle {
     top: 50%;
+    margin-left: .75em;
+    background-color: #1F7676;
+    z-index: 1;
 }
 
 .clear-menu-btn .bottom {
-    top: 85%;
+    top: 65%;
+    margin-left: .75em;
+    background-color: #1F7676;
+    z-index: 1;
 }
 
 .clear-menu-btn .circle {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    filter: alpha(opacity=0);
-    opacity: 0;
-    width: 2.9em;
-    height: 2.9em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: transparent;
-    border-radius: 50%;
-    border: .14em solid #808080;
+    border: .2em solid #004c4c;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -334,14 +340,9 @@ body {
 /*FOOTER*/
 
 #footer_accent {
-    background-color: #262626;
+    background-color: #004c4c;
     width: 100%;
     height: 30%;
-}
-
-#footerArrow img {
-    height: 100%;
-    float: right;
 }
 
 
@@ -350,6 +351,7 @@ body {
 #footerContent {
     height: 70%;
     width: 100%;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23);
 }
 
 #connect {
@@ -360,6 +362,7 @@ body {
     text-align: center;
     padding-top: .4em;
     margin: 0;
+    color: white;
 }
 
 
@@ -426,10 +429,11 @@ body {
     font-size: 1em;
     text-decoration: none;
     transition: .25s linear;
+    color: white;
 }
 
 #bduke a:hover {
-    color: #FF6A00;
+    color: #004c4c;
 }
 
 
@@ -453,7 +457,7 @@ body {
 }
 
 #footer {
-    background: #111111;
+    background: #006500;
     width: 100%;
     height: 12em;
     position: absolute;
@@ -478,7 +482,7 @@ body {
 
 /*PAGE SIZE*/
 
-#mainContent {
+#mainHome {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -487,14 +491,32 @@ body {
 
 /*TEXT*/
 
-#mainContent p {
+#mainHome h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#mainHome h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#mainHome h3 {
+    font-size: 1.6em;
+}
+
+#mainHome blockquote {
     text-align: center;
     font-size: 1.4em;
 }
 
-#mainContent p:nth-child(4) {
-    margin-bottom: 0;
-    padding-bottom: 0;
+#mainHome p {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.pgBio {
+    text-align: left !important;
 }
 
 

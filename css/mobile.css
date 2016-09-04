@@ -52,10 +52,6 @@ main p {
     font-size: 1.4em;
 }
 
-a.currentPage {
-    color: #199D72;
-}
-
 
 /*LINK COLOR*/
 
@@ -142,6 +138,10 @@ main {
 }
 
 #nav a:hover {
+    color: #199D72;
+}
+
+#nav a.currentPage {
     color: #199D72;
 }
 
@@ -652,7 +652,7 @@ body {
 
 .resourcesAccordion input:checked~ .article.ac-small,
 .pageJumpAccordion input:checked~ .article.ac-small {
-    max-height: 208em;
+    max-height: 45em;
 }
 
 
@@ -711,6 +711,10 @@ body {
 
 .resourcesNav tr td h3 {
     text-align: center;
+}
+
+#resourcesNavWrapper a.currentPage {
+    color: #199D72;
 }
 
 

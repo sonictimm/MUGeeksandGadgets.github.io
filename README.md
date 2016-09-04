@@ -3,7 +3,7 @@
 This README establishes rules & conventions to be used throughout the
 website development.  These will make collaboration easier and keep
 things organized.  If you have any questions or comments, please email
-Patrick Shinn at: `shinn16@marshall.edu`
+~~Patrick Shinn at: `shinn16@marshall.edu`~~ Brandon Duke at: 'duke23@marshall.edu'
 
 
 ## Site Organization
@@ -16,7 +16,7 @@ The home page is an exception: it will always be in the root directory of the si
 ~~Example:  The "About" page needs a picture for each officer.  Because it
 needs this extra content, it gets its own folder to seperate its content
 from the rest of the website.~~
-Example: The "About" gets its own folder. All of its contents, if any, are held in its 
+Example: The "About" page gets its own folder. All of its contents, if any, are held in its 
 own folder, or shared folder, in the contents folder.
 
 A page to supplement an officer's description would not need its own
@@ -27,7 +27,7 @@ thus it would be in the same folder as the "About" page.
 ## Page Formating
 
 All page formating will be done through CSS.  The general, site-wide
-stylesheet is located at ~~`ROOT/stylesheet.css`.~~ ROOT/css/wideScreen.css or ROOT/css/mobile.css.  All pages will be
+stylesheet is located at ~~`ROOT/stylesheet.css`.~~ ROOT/css/wideScreen.css or ROOT/css/mobile.css. This is so that the CSS can be changed depending on the screen size.  All pages will be
 styled the same with the exception of a key element that seperates that
 page from the rest of the site.  **All** Images, and any other contents ~~needed for the site-wide
 stylesheet~~ should be placed in the `ROOT/contents/` directory.

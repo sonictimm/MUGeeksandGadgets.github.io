@@ -32,19 +32,23 @@ body {
 
 /*TEXT*/
 
-h1 {
+main h1 {
     font-size: 2em;
 }
 
-h2 {
+main h2 {
     font-size: 1.8em;
 }
 
-h3 {
+main h3 {
+    font-size: 1.7em;
+}
+
+main h4 {
     font-size: 1.6em;
 }
 
-p {
+main p {
     font-size: 1.5em;
 }
 
@@ -384,9 +388,9 @@ body {
 /*TEXT*/
 
 #mainHome h1,
-h2,
-h3,
-p {
+#mainHome h2,
+#mainHome h3,
+#mainHome p {
     text-align: center;
 }
 
@@ -405,11 +409,45 @@ p {
 
 /**********BEGIN NEWS**********/
 
+
+/*TEXT*/
+
 #mainNews h2,
-h3,
-p {
+#mainNews h3,
+#mainNews p {
     text-align: center;
 }
 
 
 /**********END NEWS**********/
+
+
+/**********BEGIN ABOUT**********/
+
+
+/*TABLE*/
+
+#mainAbout table {
+    width: 100%;
+}
+
+
+/*TEXT*/
+
+#mainAbout h1,
+#mainAbout h2,
+#mainAbout h3,
+#mainAbout h4,
+#mainAbout p {
+    text-align: center;
+}
+
+
+/*IMAGES*/
+
+#mainAbout img {
+    width: 20vw;
+}
+
+
+/**********END ABOUT**********/

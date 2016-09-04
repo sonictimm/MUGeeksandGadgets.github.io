@@ -44,6 +44,10 @@ main h3 {
     font-size: 1.6em;
 }
 
+main h4 {
+    font-size: 1.5em;
+}
+
 main p {
     font-size: 1.4em;
 }
@@ -552,3 +556,41 @@ p {
 
 
 /**********END NEWS**********/
+
+
+/**********BEGIN ABOUT**********/
+
+
+/*TABLE*/
+
+#mainAbout table,
+#mainAbout thead,
+#mainAbout tbody,
+#mainAbout th,
+#mainAbout tr,
+#mainAbout td {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*TEXT*/
+
+#mainAbout h1,
+#mainAbout h2,
+#mainAbout h3,
+#mainAbout h4,
+#mainAbout p {
+    text-align: center;
+}
+
+
+/*IMAGES*/
+
+#mainAbout img {
+    width: 40vw;
+}
+
+
+/**********END ABOUT**********/

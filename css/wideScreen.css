@@ -472,3 +472,37 @@ body {
 
 
 /**********END ABOUT**********/
+
+
+/**********BEGIN RESOURCES**********/
+
+
+/*TABLE*/
+
+.resourcesNav {
+    width: 100%;
+}
+
+.resourcesNav tr td {
+    overflow: hidden;
+}
+
+
+/*TEXT*/
+
+#mainResources ul {
+    font-size: 1.5em;
+}
+
+#mainResources a {
+    text-decoration: none;
+    margin: -5em;
+    padding: 5em;
+}
+
+.resourcesNav tr td h3 {
+    text-align: center;
+}
+
+
+/**********END RESOURCES**********/

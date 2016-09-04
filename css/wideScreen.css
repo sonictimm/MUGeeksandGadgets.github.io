@@ -493,9 +493,17 @@ body {
     overflow: hidden;
 }
 
-#resourceDoubNavSpacer td {
-    padding: .4em;
-    border: initial;
+.resourcesNav {
+    margin-top: .5em;
+}
+
+
+/*dropdown*/
+
+#resourceJump,
+#ac-0,
+#ac-1 {
+    display: none;
 }
 
 

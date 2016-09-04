@@ -64,7 +64,7 @@ a.currentPage {
 }
 
 #content a:hover {
-    color: #076767;
+    color: #199D72;
 }
 
 
@@ -526,9 +526,9 @@ body {
 /*TEXT*/
 
 #mainHome h1,
-h2,
-h3,
-p {
+#mainHome h2,
+#mainHome h3,
+#mainHome p {
     text-align: center;
 }
 
@@ -548,9 +548,9 @@ p {
 /**********BEGIN NEWS**********/
 
 #mainNews h1,
-h2,
-h3,
-p {
+#mainNews h2,
+#mainNews h3,
+#mainNews p {
     text-align: center;
 }
 
@@ -594,3 +594,131 @@ p {
 
 
 /**********END ABOUT**********/
+
+
+/**********BEGIN RESOURCES and SUB-PAGES**********/
+
+
+/*TABLE*/
+
+.resourcesNav {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resourcesNav tr {
+    border-spacing: 5em;
+}
+
+.resourcesNav tr td {
+    border-bottom: .2em solid #125D53;
+    overflow: hidden;
+}
+
+.resourcesNav tr td:last-child {
+    border-bottom: none;
+}
+
+.resourcesNav tr td {
+    display: block;
+}
+
+
+/*DROP DOWN STYLING*/
+
+#ac-0,
+#ac-1 {
+    display: none;
+}
+
+#resourceJump {
+    width: 100%;
+}
+
+#resourceJump td {
+    overflow: hidden;
+}
+
+.resourcesAccordion label h3,
+.pageJumpAccordion label h3 {
+    float: left;
+}
+
+.resourcesAccordion .article,
+.pageJumpAccordion .article {
+    overflow: hidden;
+    max-height: 0px;
+}
+
+.resourcesAccordion input:checked~ .article.ac-small,
+.pageJumpAccordion input:checked~ .article.ac-small {
+    max-height: 208em;
+}
+
+
+/*DROPDOWN ARROW*/
+
+#resourcesDown0,
+#resourcesDown1 {
+    float: right;
+    width: 3em;
+    cursor: pointer;
+    margin: -5em;
+    padding: 5em;
+    transform: rotate(0deg);
+    transition: .2s linear;
+}
+
+.resourcesAccordion input:checked~ label #resourceJump tr td #resourcesDown0,
+.pageJumpAccordion input:checked~ label #resourceJump tr td #resourcesDown1 {
+    transform: rotate(180deg);
+}
+
+
+/*DROP DOWN ACTION*/
+
+.resourcesAccordion input:checked~ .article,
+.pageJumpAccordion input:checked~ .article {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.resourcesAccordion .article,
+.pageJumpAccordion .article {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*TEXT*/
+
+#mainResources> ul,
+#mainReference> article> ul {
+    font-size: 1.5em;
+}
+
+.resourcesNav tr td h3 a {
+    text-decoration: none;
+    margin: -5em;
+    padding: 5em;
+}
+
+.resourcesNav tr td h3 {
+    text-align: center;
+}
+
+
+/*IMAGES*/
+
+#mainEngineering img {
+    width: 100%;
+}
+
+
+/**********END RESOURCES and SUB-PAGES**********/

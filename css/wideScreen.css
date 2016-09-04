@@ -481,9 +481,11 @@ body {
 
 .resourcesNav {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .resourcesNav tr td {
+    border: .2em solid #125D53;
     overflow: hidden;
 }
 

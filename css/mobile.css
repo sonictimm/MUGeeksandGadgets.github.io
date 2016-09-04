@@ -81,7 +81,7 @@ main {
 #nav {
     background-color: #125D53;
     /* critical sizing and position styles */
-    width: 14em;
+    width: 15.5em;
     position: fixed;
     top: 0;
     right: 0;
@@ -358,7 +358,7 @@ main {
 
 .nav-trigger:checked~ #wrapper {
     /*The window*/
-    right: 14em;
+    right: 15.5em;
 }
 
 

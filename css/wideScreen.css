@@ -139,27 +139,34 @@ main {
     color: #199D72;
 }
 
-#nav ul ul {
+
+/*DROPDOWN SUBNAV*/
+
+#resourceDropdown {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#subNav1 {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: #2E3094;
     padding: 0;
+    margin: 0;
+    background: #125D53;
     width: 100%;
 }
 
-#nav ul ul li {
-    float: none;
-    width: 100%;
+#subNav1 li {
+    float: none !important;
+    width: 100% !important;
+    height: 4em !important;
+    overflow: hidden;
 }
 
-#nav ul ul ul {
-    top: 0;
-    left: 100%;
-}
-
-#nav ul li:hover> ul {
+#resourceDropdown:hover> #subNav1 {
     display: block;
 }
 
@@ -169,13 +176,12 @@ main {
 #nav a {
     display: block;
     text-align: center;
-    height: 4.7em;
+    height: 8.4em;
     width: 100%;
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: .3s linear;
-    padding-top: 3.7em;
     overflow: hidden;
 }
 
@@ -186,6 +192,21 @@ main {
     padding-right: .8em;
     padding-bottom: 0;
     padding-top: 0;
+    text-align: center;
+    height: 8.4em;
+    line-height: 8.4em;
+    white-space: nowrap;
+}
+
+#subNav1 p {
+    text-align: center;
+    height: 4em !important;
+    line-height: 4em !important;
+}
+
+#subNav1 a {
+    height: 4em !important;
+    padding-top: 0 !important;
 }
 
 

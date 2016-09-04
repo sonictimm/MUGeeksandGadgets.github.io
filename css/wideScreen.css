@@ -474,7 +474,7 @@ body {
 /**********END ABOUT**********/
 
 
-/**********BEGIN RESOURCES**********/
+/**********BEGIN RESOURCES and SUB-PAGES**********/
 
 
 /*TABLE*/
@@ -494,7 +494,7 @@ body {
     font-size: 1.5em;
 }
 
-#mainResources a {
+.resourcesNav tr td h3 a {
     text-decoration: none;
     margin: -5em;
     padding: 5em;
@@ -505,4 +505,11 @@ body {
 }
 
 
-/**********END RESOURCES**********/
+/*IMAGES*/
+
+#mainEngineering img {
+    width: 100%;
+}
+
+
+/**********END RESOURCES and SUB-PAGES**********/

@@ -52,6 +52,10 @@ main p {
     font-size: 1.5em;
 }
 
+a.currentPage {
+    color: #199D72;
+}
+
 
 /*LINK COLOR*/
 
@@ -125,10 +129,6 @@ main {
     margin: 0;
     padding: 0;
     transition: background-color .3s linear;
-}
-
-#nav a.currentPage {
-    color: #199D72;
 }
 
 #nav ul li:hover {

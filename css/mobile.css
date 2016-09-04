@@ -52,6 +52,10 @@ main p {
     font-size: 1.4em;
 }
 
+a.currentPage {
+    color: #199D72;
+}
+
 
 /*LINK COLOR*/
 
@@ -125,10 +129,6 @@ main {
 
 #nav #subNav1 p {
     padding-left: 2em;
-}
-
-#nav a.currentPage {
-    color: #199D72;
 }
 
 #nav a {

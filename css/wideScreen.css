@@ -484,9 +484,18 @@ body {
     border-collapse: collapse;
 }
 
+.resourcesNav tr {
+    border-spacing: 5em;
+}
+
 .resourcesNav tr td {
     border: .2em solid #125D53;
     overflow: hidden;
+}
+
+#progNavSpacer td {
+    padding: .4em;
+    border: initial;
 }
 
 

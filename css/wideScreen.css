@@ -501,7 +501,8 @@ body {
 
 /*TEXT*/
 
-#mainResources ul {
+#mainResources> ul,
+#mainReference> article> ul {
     font-size: 1.5em;
 }
 

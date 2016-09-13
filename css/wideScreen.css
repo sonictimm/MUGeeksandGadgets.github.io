@@ -513,12 +513,39 @@ body {
 
 /**********BEGIN RESOURCES and SUB-PAGES**********/
 
+.resourcePages {
+    margin-top: 5em;
+}
+
+#mainResources .resourcesAccordion,
+mainReference .resourcesAccordion {
+    width: 70%;
+}
+
+.resourcesAccordion,
+.pageJumpAccordion {
+    min-width: 35%;
+    max-width: 100%;
+    position: absolute;
+}
+
+.resourcesAccordion {
+    top: 0;
+    left: 15%;
+}
+
+.pageJumpAccordion {
+    top: 0;
+    right: 15%;
+}
+
 
 /*TABLE*/
 
 .resourcesNav {
     width: 100%;
     border-collapse: collapse;
+    background-image: url(../contents/webImages/blur.png);
 }
 
 .resourcesNav tr {
@@ -526,35 +553,101 @@ body {
 }
 
 .resourcesNav tr td {
-    border: .2em solid #125D53;
+    border-bottom: .2em solid #125D53;
     overflow: hidden;
 }
 
-.resourcesNav {
-    margin-top: .5em;
+.resourcesNav tr td:last-child {
+    border-bottom: none;
+}
+
+.resourcesNav tr td {
+    display: block;
 }
 
 
-/*dropdown*/
+/*DROP DOWN STYLING*/
 
-#resourceJump,
 #ac-0,
 #ac-1 {
     display: none;
 }
 
+#resourceJump {
+    width: 100%;
+}
+
+#resourceJump td {
+    overflow: hidden;
+}
+
+.resourcesAccordion label h3,
+.pageJumpAccordion label h3 {
+    float: left;
+}
+
+.resourcesAccordion .article,
+.pageJumpAccordion .article {
+    overflow: hidden;
+    max-height: 0px;
+}
+
+.resourcesAccordion input:checked~ .article.ac-small,
+.pageJumpAccordion input:checked~ .article.ac-small {
+    max-height: 45em;
+}
+
+
+/*DROPDOWN ARROW*/
+
+#resourcesDown0,
+#resourcesDown1 {
+    float: right;
+    width: 3em;
+    cursor: pointer;
+    margin: -5em;
+    padding: 5em;
+    transform: rotate(0deg);
+    transition: .2s linear;
+}
+
+.resourcesAccordion input:checked~ label #resourceJump tr td #resourcesDown0,
+.pageJumpAccordion input:checked~ label #resourceJump tr td #resourcesDown1 {
+    transform: rotate(180deg);
+}
+
+
+/*DROP DOWN ACTION*/
+
+.resourcesAccordion input:checked~ .article,
+.pageJumpAccordion input:checked~ .article {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.resourcesAccordion .article,
+.pageJumpAccordion .article {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 
 /*TEXT*/
 
-#mainResources> ul,
-#mainReference> article> ul {
+#mainResources ul {
     font-size: 1.5em;
 }
 
 .resourcesNav tr td h3 a {
     text-decoration: none;
-    margin: -5em;
-    padding: 5em;
+    margin: -8em;
+    padding: 8em;
 }
 
 .resourcesNav tr td h3 {
@@ -563,13 +656,6 @@ body {
 
 #resourcesNavWrapper a.currentPage {
     color: #199D72;
-}
-
-
-/*IMAGES*/
-
-#mainEngineering img {
-    width: 100%;
 }
 
 

@@ -518,7 +518,7 @@ body {
 }
 
 #mainResources .resourcesAccordion,
-mainReference .resourcesAccordion {
+#mainReference .resourcesAccordion {
     width: 70%;
 }
 
